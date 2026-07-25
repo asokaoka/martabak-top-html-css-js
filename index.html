@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martabak Top Hokky 10 — Pesan Sekarang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            yellow: '#FACC15', yellowDark: '#EAB308',
+                            orange: '#F97316', orangeDark: '#EA580C',
+                            blue: '#2563EB', blueDark: '#1D4ED8',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans text-gray-700 bg-gray-50">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-gradient-to-br from-yellow-400 to-brand-orange rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fas fa-fire text-white text-lg"></i>
+                    </div>
+                    <span class="text-xl md:text-2xl font-bold bg-gradient-to-r from-yellow-400 to-brand-orange bg-clip-text text-transparent">Martabak<span class="text-orange-600">Top Hokky 10</span></span>
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-yellow-600 font-medium transition-colors">Beranda</a>
+                    <a href="tentang.html" class="nav-link text-gray-700 hover:text-yellow-600 font-medium transition-colors">Tentang</a>
+                    <a href="menu.html" class="nav-link text-gray-700 hover:text-yellow-600 font-medium transition-colors">Menu</a>
+                    <a href="kontak.html" class="nav-link text-gray-700 hover:text-yellow-600 font-medium transition-colors">Contact Me</a>
+                    <a href="kontak.html" class="btn-bounce bg-gradient-to-r from-brand-orange to-brand-orangeDark text-white px-6 py-2.5 rounded-full font-semibold shadow-lg hover:shadow-xl"><i class="fab fa-whatsapp mr-2"></i>Pesan</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg hover:bg-gray-100 transition-colors">
+                    <i class="fas fa-bars text-xl text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-lg">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html" class="block py-2 px-4 rounded-lg hover:bg-yellow-50 text-gray-700 font-medium transition-colors mobile-nav-link">Beranda</a>
+                <a href="tentang.html" class="block py-2 px-4 rounded-lg hover:bg-yellow-50 text-gray-700 font-medium transition-colors mobile-nav-link">Tentang</a>
+                <a href="menu.html" class="block py-2 px-4 rounded-lg hover:bg-yellow-50 text-gray-700 font-medium transition-colors mobile-nav-link">Menu</a>
+                <a href="kontak.html" class="block py-2 px-4 rounded-lg hover:bg-yellow-50 text-gray-700 font-medium transition-colors mobile-nav-link">Contact Me</a>
+                <a href="https://wa.me/6285959732077" target="_blank" class="block py-3 px-4 bg-gradient-to-r from-brand-orange to-brand-orangeDark text-white rounded-xl font-semibold text-center mt-2"><i class="fab fa-whatsapp mr-2"></i>Pesan Sekarang</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+<!-- Beranda / Hero -->
+    <section id="beranda" class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white fade-in">
+                    <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+                        <span class="w-2 h-2 bg-brand-yellow rounded-full animate-pulse"></span>
+                        <span class="text-sm font-medium">Buka Setiap Hari 18:00 - 23:00</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">Nikmati Kelezatan<br><span class="text-orange-600">Martabak</span> Autentik</h1>
+                    <p class="text-lg md:text-xl text-white/90 mb-8 max-w-lg leading-relaxed">Martabak manis dan telur dengan resep turun-temurun, bahan berkualitas, dan cita rasa yang tak terlupakan. Pesan sekarang dan rasakan bedanya!</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="menu.html" class="btn-bounce bg-brand-yellow text-gray-900 px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl flex items-center gap-2"><i class="fas fa-utensils"></i>Lihat Menu</a>
+                        <a href="https://wa.me/6285959732077" target="_blank" class="btn-bounce bg-white/20 backdrop-blur-sm border-2 border-white/40 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/30 transition-all flex items-center gap-2"><i class="fab fa-whatsapp"></i>Hubungi Kami</a>
+                    </div>
+                    <div class="flex items-center gap-6 mt-10">
+                        <div class="text-center"><div class="text-3xl font-bold text-orange-700">5K+</div><div class="text-sm text-white/80">Pelanggan Puas</div></div>
+                        <div class="w-px h-12 bg-white/30"></div>
+                        <div class="text-center"><div class="text-3xl font-bold text-orange-700">15+</div><div class="text-sm text-white/80">Varian Menu</div></div>
+                        <div class="w-px h-12 bg-white/30"></div>
+                        <div class="text-center"><div class="text-3xl font-bold text-orange-700">4.9</div><div class="text-sm text-white/80">Rating Google</div></div>
+                    </div>
+                </div>
+                <div class="hidden md:block fade-in" style="transition-delay: 0.2s;">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-brand-yellow/30 rounded-full blur-3xl"></div>
+                        <img src="Resep_Martabak_Manis_Teflon.jpg" alt="Martabak Top Hokky 10" class="relative rounded-3xl shadow-2xl border-4 border-white/20 w-full max-w-md mx-auto object-cover aspect-square">
+                        <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-xl">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center"><i class="fas fa-check-circle text-green-600 text-xl"></i></div>
+                                <div><div class="font-bold text-gray-800">Pengiriman Cepat</div><div class="text-sm text-gray-500">30 menit sampai</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-12 md:mt-0">
+                <a href="#keunggulan" class="scroll-indicator text-gray-800/70 hover:text-gray-900 transition-colors"><i class="fas fa-chevron-down text-2xl"></i></a>
+            </div>
+        </div>
+    </section>
+
+    
+
+<!-- Keunggulan -->
+    <section id="keunggulan" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <span class="inline-block bg-yellow-500/10 text-yellow-600 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Mengapa Memilih Kami</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Keunggulan Produk Kami</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">Kami berkomitmen memberikan pengalaman terbaik dengan kualitas yang konsisten</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card-hover bg-gray-50 rounded-2xl p-8 text-center border border-gray-100 fade-in">
+                    <div class="w-16 h-16 bg-yellow-500/10 rounded-2xl flex items-center justify-center mx-auto mb-6"><i class="fas fa-leaf text-yellow-600 text-2xl"></i></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Bahan Segar</h3>
+                    <p class="text-gray-500 leading-relaxed">Hanya menggunakan bahan-bahan segar dan berkualitas tinggi setiap hari</p>
+                </div>
+                <div class="card-hover bg-gray-50 rounded-2xl p-8 text-center border border-gray-100 fade-in" style="transition-delay: 0.1s;">
+                    <div class="w-16 h-16 bg-brand-yellow/20 rounded-2xl flex items-center justify-center mx-auto mb-6"><i class="fas fa-book-open text-brand-orange text-2xl"></i></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Resep Autentik</h3>
+                    <p class="text-gray-500 leading-relaxed">Rahasia resep turun-temurun yang menjaga cita rasa klasik</p>
+                </div>
+                <div class="card-hover bg-gray-50 rounded-2xl p-8 text-center border border-gray-100 fade-in" style="transition-delay: 0.2s;">
+                    <div class="w-16 h-16 bg-brand-orange/10 rounded-2xl flex items-center justify-center mx-auto mb-6"><i class="fas fa-tags text-brand-orange text-2xl"></i></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Harga Terjangkau</h3>
+                    <p class="text-gray-500 leading-relaxed">Kualitas premium dengan harga yang ramah di kantong</p>
+                </div>
+                <div class="card-hover bg-gray-50 rounded-2xl p-8 text-center border border-gray-100 fade-in" style="transition-delay: 0.3s;">
+                    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-6"><i class="fas fa-shipping-fast text-green-600 text-2xl"></i></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Pengiriman Cepat</h3>
+                    <p class="text-gray-500 leading-relaxed">Pesan hari ini, nikmati dalam 30 menit dengan layanan antar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+<!-- Preview Menu Favorit -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <span class="inline-block bg-brand-orange/10 text-brand-orange px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Best Seller</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Menu Favorit Pelanggan</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">Pilihan menu paling populer yang wajib kamu coba</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="gallery-item menu-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 fade-in">
+                    <div class="relative overflow-hidden ">
+                        <img src="593c769896b95ea3c9e3cbc1b835a6a7.jpg" alt="Martabak Original Coklat" class="w-full h-48 object-cover">
+                        <div class="absolute top-3 left-3 bg-brand-yellow text-gray-900 text-xs font-bold px-3 py-1 rounded-full">Best Seller</div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Martabak Original Coklat</h3>
+                        <p class="text-sm text-gray-500 mb-3">Coklat leleh</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-bold text-yellow-600">Rp 18.000</span>
+                            <a href="https://wa.me/6285959732077?text=Halo%2C%20saya%20mau%20pesan%20Martabak%20Coklat%20Keju" target="_blank" class="w-10 h-10 bg-yellow-500 text-white rounded-full flex items-center justify-center hover:bg-yellow-500Dark transition-colors"><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item menu-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 fade-in" style="transition-delay: 0.1s;">
+                    <div class="relative overflow-hidden ">
+                        <img src="images.jpg" alt="Martabak Red Velvet Coklat" class="w-full h-48 object-cover">
+                        <div class="absolute top-3 left-3 bg-brand-orange text-white text-xs font-bold px-3 py-1 rounded-full">Baru</div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Martabak Red Velvet Coklat</h3>
+                        <p class="text-sm text-gray-500 mb-3">Red velvet + Coklat leleh</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-bold text-yellow-600">Rp 23.000</span>
+                            <a href="https://wa.me/6285959732077?text=Halo%2C%20saya%20mau%20pesan%20Martabak%20Red%20Velvet" target="_blank" class="w-10 h-10 bg-yellow-500 text-white rounded-full flex items-center justify-center hover:bg-yellow-500Dark transition-colors"><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item menu-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 fade-in" style="transition-delay: 0.2s;">
+                    <div class="relative overflow-hidden ">
+                        <img src="MartabakTelur.jpg" alt="Martabak Telur Ayam Biasa" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Martabak Telur Ayam Biasa</h3>
+                        <p class="text-sm text-gray-500 mb-3">Telur ayam + daging + sayuran</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-bold text-yellow-600">Rp 18.000</span>
+                            <a href="https://wa.me/6285959732077?text=Halo%2C%20saya%20mau%20pesan%20Martabak%20Telur%20Spesial" target="_blank" class="w-10 h-10 bg-yellow-500 text-white rounded-full flex items-center justify-center hover:bg-yellow-500Dark transition-colors"><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item menu-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 fade-in" style="transition-delay: 0.3s;">
+                    <div class="relative overflow-hidden ">
+                        <img src="82c6ccb0116033f194d0b089b5fd00af.jpg" alt="Martabak Original Keju Coklat" class="w-full h-48 object-cover object-top">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Martabak Original Keju Coklat</h3>
+                        <p class="text-sm text-gray-500 mb-3">Keju leleh + Coklat leleh</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-bold text-yellow-600">Rp 30.000</span>
+                            <a href="https://wa.me/6285959732077?text=Halo%2C%20saya%20mau%20pesan%20Martabak%20Matcha" target="_blank" class="w-10 h-10 bg-yellow-500 text-white rounded-full flex items-center justify-center hover:bg-yellow-500Dark transition-colors"><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12 fade-in">
+                <a href="menu.html" class="btn-bounce inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl">Lihat Semua Menu <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    
+
+<!-- CTA Akhir -->
+    <section class="py-20 bg-gradient-to-r from-yellow-400 to-orange-500 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-64 h-64 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-brand-yellow rounded-full translate-x-1/3 translate-y-1/3"></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10 fade-in">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Siap Memesan?</h2>
+            <p class="text-white/90 text-lg mb-10 max-w-2xl mx-auto">Pesan sekarang dan nikmati martabak hangat favorit Anda. Pengiriman cepat dan gratis untuk area tertentu!</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://wa.me/6285959732077" target="_blank" class="btn-bounce bg-brand-yellow text-gray-900 px-8 py-4 rounded-full font-bold text-lg shadow-xl flex items-center gap-2"><i class="fab fa-whatsapp text-xl"></i>Pesan via WhatsApp</a>
+                <a href="tel:+6285959732077" class="btn-bounce bg-white/20 backdrop-blur-sm border-2 border-white/40 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/30 transition-all flex items-center gap-2"><i class="fas fa-phone"></i>Telepon Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    
+
+<!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-yellow-400 to-brand-orange rounded-xl flex items-center justify-center"><i class="fas fa-fire text-white text-lg"></i></div>
+                        <span class="text-xl font-bold">Martabak<span class="text-orange-600"> Top Hokky 10</span></span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Martabak autentik dengan resep turun-temurun, bahan berkualitas, dan cita rasa yang tak terlupakan.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Navigasi</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-orange-600 transition-colors text-sm">Beranda</a></li>
+                        <li><a href="tentang.html" class="text-gray-400 hover:text-orange-600 transition-colors text-sm">Tentang</a></li>
+                        <li><a href="menu.html" class="text-gray-400 hover:text-orange-600 transition-colors text-sm">Menu</a></li>
+                        <li><a href="kontak.html" class="text-gray-400 hover:text-orange-600 transition-colors text-sm">Contact Me</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Kontak</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-500"></i> +62 859-5973-2077</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-gray-500"></i> Pekalongan, Jawa Tengah</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Jam Buka</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex justify-between"><span>Senin - Minggu</span><span>18:00 - 23:00</span></li>
+                        <li class="text-orange-600 font-medium mt-2">Buka Setiap Hari!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-500 text-sm">&copy; 2026 Martabak Top Hokky 10. All rights reserved. Dibuat dengan <i class="fas fa-heart text-red-500"></i> di Pekalongan.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+
+<!-- Back to Top -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 bg-yellow-500 text-white rounded-full shadow-xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:bg-yellow-500Dark z-40">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+
+<script src="script.js"></script>
+</body>
+</html>
